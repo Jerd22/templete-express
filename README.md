@@ -15,6 +15,7 @@ Rest CRUD API for a simple application using Node. js, Express and MySQL use Her
     - create add-ons : ClearDB MySQL 
         heroku on web select Setting on Tabbar menu then clink Reveal Config Vars Look 
         your link : mysql://<USER>:<PASSWORD>@<HOST>/<DB>?reconnect=true
+                  : [database type]://[username]:[password]@[host]:[port]/[database name]
 
     - edit file .env 
         HOST = <USER>
