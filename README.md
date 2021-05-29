@@ -9,27 +9,33 @@ Rest CRUD API for a simple application using Node. js, Express and MySQL use Her
 
 ### heroku create app 
  1. run heroku login -i
- 2. run heroku create <appname> 
+ 2. run heroku create [appname]
  3. run git init 
- 4. run heroku git:remote -a <appname>  
+ 4. run heroku git:remote -a [appname]
     - create add-ons : ClearDB MySQL 
         - run heroku addons:create cleardb:ignite
         - run heroku config 
+        
         heroku on web select Setting on Tabbar menu then clink Reveal Config Vars Look 
-        your link : mysql://<USER>:<PASSWORD>@<HOST>/<DB>?reconnect=true
-                  : [database type]://[username]:[password]@[host]:[port]/[database name]
+        
+        
+        your link : [database type]://[username]:[password]@[host]:[port]/[database name]?reconnect=true
 
     - edit file .env 
-        HOST = <USER>
-        USER = <PASSWORD>
-        PASSWORD = <HOST>
-        DB = <DB> 
+ 
+        HOST = [host]
+ 
+        USER = [username]
+ 
+        PASSWORD = [password]
+ 
+        DB = [database name] 
 
     run Tack test and Open Browser http://localhost:8080/  
 
  5. run git add .
  6. run git commit -am "make it better" 
  7. run git push heroku main 
- 8.  open https://<appname>.herokuapp.com/ 
+ 8.  open https://[appname].herokuapp.com/ 
 
 
